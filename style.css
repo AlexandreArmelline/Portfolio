@@ -111,6 +111,8 @@ main{
 .imagens_tecnologia{
     display: flex;
     justify-content: center;
+    /* background-image: url(Imagens/fundo.jpg); */
+   
 }
 
 .imagens_tecnologia_logo{
@@ -119,10 +121,55 @@ main{
 }
 
 .destaque{
-    color: #0cb328;
+    color: var(--cor_2);
    
 }
 
+
+
+/* Page projetos */
+
+.container{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    gap: 3%;
+    
+
+}
+
+.titulo{
+    color: var(--cor_branca);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.container_projeto{
+    /* width: 25%;
+    height: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius: 10px; 
+    border: 2px solid var(--cor_branca); */
+    
+}
+.container_projeto_link{
+    
+   
+}
+
+.container_projeto_imagem:hover{
+    width: 105%;
+    box-shadow: 0px 5px 20px var(--cor_3);
+}
+
+.container_projeto_texto{
+    color: var(--cor_2);
+    font-size: 1.2rem;
+}
 
 
 
