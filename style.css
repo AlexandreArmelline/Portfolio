@@ -119,15 +119,9 @@ main{
 
 .imagens_tecnologia{
     display: flex;
-    justify-content: center;
-    
-   
+    justify-content: center;   
 }
 
-.imagens_tecnologia_logo{
-    
-    
-}
 
 .destaque{
     color: var(--cor_2);
@@ -165,10 +159,6 @@ main{
     border: 2px solid var(--cor_branca); */
     
 }
-.container_projeto_link{
-    
-   
-}
 
 .container_projeto_imagem:hover{
     width: 105%;
@@ -193,18 +183,18 @@ main{
     display: none;
 }
 
+.foto_media{
+    display: none;
+}
+
 
     
 @media screen and (max-width: 900px){
 
-    body{
-        width: 100vw;
-    }
-   
     .conteudo{
         width: 90vw;
     }
-
+        
     .conteudo_nome{
         padding: 5% 3%;
         font-size: 1.5rem;
@@ -214,6 +204,21 @@ main{
         font-size: 0.9rem;
         padding-left: 3%;
     
+    }
+
+    .container_foto_media{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        padding: 5% 0%;
+    
+    }
+
+    .foto_media{
+        display: block;
+        border-radius: 50% 50% 50% 50%;
+        width:20%;
+       
     }
 
     .conteudo_titulo{
@@ -251,13 +256,23 @@ main{
 
     .imagens_media{
         display: flex;
-        justify-content: space-around;
-    }
+        justify-content: center;
+        padding-top: 10%;
+        width: 100vw;
 
     }
 
+    .imagens_tecnologia_media{
+        display: flex;
+        justify-content: center;
+    }
 
+    .imagens_tecnologia_logo_media{
+        width: 15%;
+        
+    }
 
+    }
 
 
 
