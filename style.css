@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
-
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +10,7 @@
     --cor_3: rgb(173, 162, 188);
     --cor_preta: black;
     --cor_branca: white;
+    --Fundo: linear-gradient(70deg, rgb(75, 40, 119), 2%,  black);
 
     --fonte-1: 'Montserrat', sans-serif;
     --fonte-2: 'Krona One', sans-serif;
@@ -19,23 +18,20 @@
 
 body{
     /* background-image: url(Imagens/fundo.jpg) ; */
-    background-image: linear-gradient(70deg, var(--cor_1), 2%,  var(--cor_preta));
-    height: 100vh;
-    font-family: var(--fonte-1);
-   
+    background-image: var(--Fundo);
+    height: 100%;
     
+    font-family: var(--fonte-1);
 }
 
 main{
     display: flex;
     justify-content: space-between;
-    
 }
 
 .conteudo{
     padding-top: 3%;
-    width: 50%;
-    
+    width: 50%;   
 }
 
 .conteudo_nome{
@@ -44,7 +40,6 @@ main{
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     display: inline;
-    
 }
 
 .conteudo_link{
@@ -57,6 +52,7 @@ main{
     /* border: 2px solid #ADA2BC;
     margin: 2%; */
 }
+
 .conteudo_link:hover{
     box-shadow: 5px 10px 50px var(--cor_3);
 }
@@ -65,7 +61,6 @@ main{
     color: var(--cor_branca);
     padding: 10% 0% 0% 15%;
     font-size: 1.8rem;
-    
 }
 
 .conteudo_texto{
@@ -80,7 +75,6 @@ main{
     align-items: center;
     gap: 7%;
     padding-left: 10%;
-    
 }
 
 .botao_link{
@@ -92,7 +86,6 @@ main{
     border: 2px solid var(--cor_branca);
     border-radius: 10px;
     gap: 20px;
-    
 }
 
 .botao_link:hover{
@@ -106,7 +99,6 @@ main{
     width: 40%;
     height: 40%;
     gap: 8rem;
-    
 }
 
 .imagens_foto{
@@ -125,10 +117,7 @@ main{
 
 .destaque{
     color: var(--cor_2);
-   
 }
-
-
 
 /* Page projetos */
 
@@ -138,15 +127,12 @@ main{
     justify-content: center;
     padding-top: 5%;
     gap: 3%;
-    
-
 }
-
 
 .titulo{
     color: var(--cor_branca);
     text-align: center;
-    padding-top: 5%;
+    padding: 5%;
 }
 
 .container_projeto{
@@ -157,11 +143,9 @@ main{
     flex-direction: column;
     /* border-radius: 10px; 
     border: 2px solid var(--cor_branca); */
-    
 }
 
 .container_projeto_imagem:hover{
-    width: 105%;
     box-shadow: 0px 5px 20px var(--cor_3);
 }
 
@@ -176,7 +160,6 @@ main{
     text-align: center;
     padding: 2%;
     font-size: 1rem;
-
 }
 
 .imagens_media{
@@ -186,8 +169,6 @@ main{
 .foto_media{
     display: none;
 }
-
-
     
 @media screen and (max-width: 900px){
 
@@ -203,7 +184,6 @@ main{
     .conteudo_link{
         font-size: 0.9rem;
         padding-left: 3%;
-    
     }
 
     .container_foto_media{
@@ -211,20 +191,17 @@ main{
         justify-content: center;
         width: 100vw;
         padding: 5% 0%;
-    
     }
 
     .foto_media{
         display: block;
         border-radius: 50% 50% 50% 50%;
         width:20%;
-       
     }
 
     .conteudo_titulo{
         padding: 10% 0% 0% 8%;
         font-size: 1.5rem;
-        
     }
     
     .conteudo_texto{
@@ -246,12 +223,10 @@ main{
         border: 2px solid var(--cor_branca);
         border-radius: 10px;
         gap: 10px;
-        
     }
 
     .imagens{
         display: none;
-        
     }
 
     .imagens_media{
@@ -259,7 +234,6 @@ main{
         justify-content: center;
         padding-top: 10%;
         width: 100vw;
-
     }
 
     .imagens_tecnologia_media{
@@ -269,7 +243,25 @@ main{
 
     .imagens_tecnologia_logo_media{
         width: 15%;
+    }
+
+
+    /* Media-query para pg projetos */
+
+    .titulo{
+        padding: 15%;
+    }
+
+    .container{
+        display: block;
+       
         
+    }
+
+    .container_projeto{
+        width: 50vw;
+        padding: 8% 25%;
+    
     }
 
     }
